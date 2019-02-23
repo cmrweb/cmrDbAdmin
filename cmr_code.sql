@@ -1,0 +1,71 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.4
+-- https://www.phpmyadmin.net/
+--
+-- Hôte : 127.0.0.1:3306
+-- Généré le :  sam. 23 fév. 2019 à 23:19
+-- Version du serveur :  5.7.19
+-- Version de PHP :  7.1.9
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de données :  `cmr_code`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `code`
+--
+
+DROP TABLE IF EXISTS `code`;
+CREATE TABLE IF NOT EXISTS `code` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `code`
+--
+
+INSERT INTO `code` (`id`, `name`) VALUES
+(1, 'SELECT * FROM '),
+(2, 'SELECT  FROM  WHERE  '),
+(3, 'SELECT  FROM  WHERE  LIKE '),
+(4, 'SELECT  FROM  INNER JOIN  WHERE  '),
+(5, 'SELECT  FROM  LEFT JOIN  WHERE  '),
+(6, 'SELECT  FROM  RIGHT JOIN  WHERE  '),
+(7, 'SELECT  FROM  INNER JOIN  ON  '),
+(8, 'SELECT  FROM  LEFT JOIN  ON  '),
+(9, 'SELECT  FROM  RIGHT JOIN  ON '),
+(10, 'INSERT INTO    VALUES '),
+(11, 'INSERT INTO   SELECT  FROM   WHERE  AND '),
+(12, 'UPDATE  SET '),
+(13, 'UPDATE  SET  WHERE'),
+(14, 'DELETE FROM'),
+(15, 'DELETE FROM   WHERE'),
+(16, 'CREATE DATABASE '),
+(17, 'DROP DATABASE'),
+(18, 'CREATE TABLE '),
+(19, 'DROP TABLE'),
+(20, 'ALTER TABLE'),
+(21, 'ALTER TABLE    TO   '),
+(22, 'TRUNCATE TABLE  '),
+(23, 'CREATE TABLE  '),
+(24, 'DROP TABLE IF EXISTS  ');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
