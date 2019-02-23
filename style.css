@@ -1,0 +1,93 @@
+body{
+    background: #040d1f;color:#eee;
+    text-align: center;
+}
+
+#db {
+    display: flex;
+    justify-content: space-around;
+}
+#db fieldset {
+    width: 100%;
+}
+fieldset{
+    background: #01215ce5;
+}
+legend{
+    color:#fff;font-size: 1.3em;font-weight: bold;
+}
+#bdd{
+    background: #040d1f;
+}
+#bdd div{
+text-align:center;
+}
+#bdd div input{
+   margin: auto; 
+}
+#tblform>div{
+    display: flex;justify-content: space-around;
+}
+input {
+    display: block;
+}
+
+.field {
+    display: flex;
+}
+
+fieldset:nth-child(2) {
+    margin: 0;
+    padding: 0;
+}
+[type=submit]{
+    background: #152036;color:#ddd;padding: 5px;margin: 5px auto;
+    border-radius: 25%;
+}
+.field input {
+    width: 100%
+}
+#newtbl{
+    display: flex;
+    flex-direction: column;
+}
+span {
+    cursor: pointer;
+    font: 1.3em bold;
+    background: #152036;
+    color: #fff;
+    border-radius: 25%;
+    padding: 5px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    border: .5px #aaa solid;
+    cursor: pointer;
+    transition: .5s ease;
+    padding: 5px 0;
+    background: #152036;
+    color: #eee;
+}
+
+li:hover {
+    background: #040d1f;
+    color: #fff;
+}
+#selform input{
+margin:5px auto;
+width:50%;
+}
+#selform input[type=submit]{
+    width:10%;
+    }
