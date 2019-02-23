@@ -2,7 +2,9 @@ body{
     background: #040d1f;color:#eee;
     text-align: center;
 }
-
+a,a:visited{
+    color:inherit;
+}
 #db {
     display: flex;
     justify-content: space-around;
@@ -76,12 +78,17 @@ li {
     cursor: pointer;
     transition: .5s ease;
     padding: 5px 0;
-    background: #152036;
+    background: #071531;
     color: #eee;
 }
-
+.liste li:nth-child(odd){
+    background: #152442;
+}
+.liste li:nth-child(odd):hover{
+    background: #181b20;
+}
 li:hover {
-    background: #040d1f;
+    background: #181b20;
     color: #fff;
 }
 #selform input{

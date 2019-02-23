@@ -83,17 +83,16 @@
             <input type="submit" value="voir" name="show">
         </form>
     </fieldset>
-    <section>
+    <section class="liste"><ul>
             <?php
             if(!empty($sel)):;
              while ($row  =mysqli_fetch_assoc($result)) :;?>
-            <ul>   
-                    <?='<li> '.$row[$sel].'</li>';?>
-            </ul>
-            <?php endwhile;endif; ?>
+            <li><?=$row[$sel];?></li>
+            <?php endwhile;endif; ?></ul>
     </section>
+    <footer><small><a href="https://github.com/tykrasta/cmrDbAdmin">lien vers github</a></small></footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
-</htm l>
+</html>
