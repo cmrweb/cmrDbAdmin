@@ -10,7 +10,28 @@ $('#moins').click(function(){
     $('#newtbl>div:last-child').remove();
     
 });
-
+$('#dbshow').click(function(){
+	$('#dbBlock').css({
+		'position':'relative',
+		'right': 0,
+		'top':0,
+		'bottom':0
+	});
+	$('h1').html('cmr_db_admin');
+	$('#dbclose').show();
+	$('#dbshow').hide();
+});
+$('#dbclose').click(function(){
+	$('#dbBlock').css({
+		'position':'absolute',
+		'right': window.innerWidth-79+'px',
+		'top':22+'px',
+		'bottom':0
+	});
+	$('h1').html('');
+	$('#dbclose').hide();
+	$('#dbshow').show();
+});
 function autocomplet() {
 	var min_length = 0; // min caracters to display the autocomplete
 	var keyword = $('#keyword').val();
@@ -62,5 +83,5 @@ $(function() {
 		'background' : $('#inbgclr').val(),
 		'color' : $('#intxtclr').val()
 	});
-	
+	$('#dbshow').hide();
   });

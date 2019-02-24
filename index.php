@@ -27,9 +27,12 @@
                 <input type="submit" name="defclr" value="par defaut">
             </form>
         </div>
-
-    </header>
-    <h1>cmr_db_admin</h1>
+        
+    </header><h1>cmr_db_admin</h1>
+    
+    <section id=dbBlock>
+    <h2><i id="dbshow" class="fas fa-database"></i>
+    <i id="dbclose" class="fas fa-window-close"></i></h2>
     <section id="db">
         <fieldset>
             <legend>Base de Donnée</legend>
@@ -84,7 +87,7 @@
     <fieldset>
         <legend>Requete</legend>
         <form action="#" method="post">
-            <textarea rows="7" spellcheck="false" type='text' id='keyword' name="keyword" onkeyup='autocomplet()'></textarea>
+            <textarea placeholder="" rows="7" spellcheck="false" type='text' id='keyword' name="keyword" onkeyup='autocomplet()'></textarea>
             <ul id='name_list_id'></ul>
             <input type="submit" value="envoyer" name="request">
             <p>
@@ -102,38 +105,44 @@
     <section class="liste">
         <table>
             <tr>
-                
+
                 <?php
-                if (!empty($sel)):;
+                /*
                 $titre = mysqli_fetch_assoc($result);
-                foreach ($titre as $key => $value):;
-                    ?>
+                if (!empty($titre)):;
+                    foreach ($titre as $key => $value):;
+                        ?>
                 <th>
                     <?= $key; ?>
                 </th>
 
-                <?php endforeach; ?>
+                <?php endforeach;
+                endif; 
+                */?>
             </tr>
+
             <?php
-            
+            if (!empty($sel)):;
                 while ($row = mysqli_fetch_assoc($result)):;
                     $newSel = explode(",", $sel);
                     ?>
             <tr>
                 <?php
-                for ($i = 0; $i <count($newSel); $i++):;
+                for ($i = 0; $i < count($newSel); $i++):;
                     ?>
                 <td>
-                    <?= $row[$newSel[$i]]; ?>
+                    <?= utf8_encode($row[$newSel[$i]]); ?>
                 </td>
 
                 <?php endfor; ?>
             </tr>
             <?php endwhile;
-    endif; ?>
+            endif; ?>
         </table>
     </section>
     <footer><small><a target="_blank" href="https://github.com/tykrasta/cmrDbAdmin">github</a></small></footer>
+    </section>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>

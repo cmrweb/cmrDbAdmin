@@ -88,7 +88,7 @@ if(isset($_POST['createtble'])){
 if(isset($_POST['request'])){
     $req=$_POST['keyword'];
     if(!empty($req)){
-        $msg3= 'Envoyer : '.$req;
+        $msg3= $req;
         connect($servername, $username, $password,$dbname);
         mysqli_query($conn,$req);   
     }else{
