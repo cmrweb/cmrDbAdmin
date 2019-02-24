@@ -16,8 +16,10 @@
 <div>
 <p>background :</p>
 <input type="color" value="#040d1f" id="bgclr">
-<p>texte :</p>
 <input type="color" value="#ffffff" id="txtclr">
+<p>input :</p>
+<input type="color" value="#060416" id="inbgclr">
+<input type="color" value="#9fd1d1" id="intxtclr">
 </div>
     <h1>cmrDbAdmin</h1>
 </header>

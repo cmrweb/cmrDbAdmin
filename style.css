@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Comfortaa|Coiny|Inconsolata');
-
+*::selection{
+    background: #cfbc0b;
+    color:#000;
+}
 body{
     background: #040d1f;color:#eee;
     text-align: center;
@@ -68,6 +71,10 @@ fieldset:nth-child(2) {
 [type=submit]{
     background: #1f2227a8;color:#ddd;padding: 5px;margin: 5px auto;
     border-radius: 25%;font-family: 'Comfortaa', cursive;
+}
+[type=text]{
+    background:#060416;
+    color: #9fd1d1;
 }
 .field input {
     width: 100%

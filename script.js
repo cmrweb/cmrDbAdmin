@@ -45,4 +45,8 @@ $(document).on('change',function(){
 	$('legend,input[type=submit],li').css({
 		'color' : $('#txtclr').val()
 	});
+	$('[type=text]').css({
+		'background' : $('#inbgclr').val(),
+		'color' : $('#intxtclr').val()
+	});
 });
