@@ -68,7 +68,7 @@
     <fieldset>
         <legend>Requete</legend>
         <form action="#" method="post">
-            <textarea spellcheck="false" type='text' id='keyword' name="keyword" onkeyup='autocomplet()'></textarea>
+            <textarea rows="7" spellcheck="false" type='text' id='keyword' name="keyword" onkeyup='autocomplet()'></textarea>
             <ul id='name_list_id'></ul>
             <input type="submit" value="envoyer" name="request">
             <p>
@@ -86,7 +86,7 @@
     <section class="liste"><ul>
             <?php
             if(!empty($sel)):;
-             while ($row  =mysqli_fetch_assoc($result)) :;?>
+             while ($row=mysqli_fetch_assoc($result)) :;?>
             <li><?=$row[$sel];?></li>
             <?php endwhile;endif; ?></ul>
     </section>
