@@ -7,8 +7,8 @@
 ![image6](/img/6.PNG "image6") 
 
 2. Cree la table 'code' avec les colonnes :
-  * `id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,`
-  * `name varchar(255) NOT NULL` 
+  >> `id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,`
+  >> `name varchar(255) NOT NULL` 
 ***
 ![image7](/img/7.PNG "image7") 
 
@@ -18,8 +18,9 @@
 ![image8](/img/8.PNG "image8") 
 
 > Captures d'ecran 
-![image1](/img/1.png "image1") |: ![image4](/img/4.png "image4") 
-![image2](/img/2.png "image2") |: ![image3](/img/3.png "image3") 
+|-----------|:-----------|
+|![image1](/img/1.png "image1") | ![image4](/img/4.png "image4") |
+|![image2](/img/2.png "image2") | ![image3](/img/3.png "image3") |
 
 
 
