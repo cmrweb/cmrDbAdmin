@@ -7,8 +7,8 @@
 ![image6](/img/6.PNG "image6") 
 
 2. Cree la table 'code' avec les colonnes :
-  >> `id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,`
-  >> `name varchar(255) NOT NULL` 
+  >> * `id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,`
+  >> * `name varchar(255) NOT NULL` 
 ***
 ![image7](/img/7.PNG "image7") 
 
