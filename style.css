@@ -18,8 +18,8 @@ fieldset{
 legend{
     color:#fff;font-size: 1.3em;font-weight: bold;
 }
-#bdd{
-    background: #040d1f;
+form{
+    background: #040d1f;border-radius: 20px;padding: 10px;
 }
 #bdd div{
 text-align:center;
@@ -30,8 +30,8 @@ text-align:center;
 #tblform>div{
     display: flex;justify-content: space-around;
 }
-input {
-    display: block;
+input,textarea {
+    display: block;border-radius: 10px;
 }
 
 .field {
