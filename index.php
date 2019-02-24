@@ -15,19 +15,21 @@
 <header>
 <div>
     <form action="#" method="post">
+        <div>
     <p>background </p>
     <input type="color" value="<?=$bgclr?>" name="bgclr" id="bgclr">
     <input type="color" value="<?=$txtclr?>" name="txtclr" id="txtclr">
     <p>input </p>
     <input type="color" value="<?=$inbgclr?>" name="inbgclr" id="inbgclr">
     <input type="color" value="<?=$intxtclr?>" name="intxtclr" id="intxtclr">
+        </div>
     <input type="submit" name="saveClr" value="save">
     <input type="submit" name="defclr" value="par defaut">
     </form>
 </div>
    
 </header>
-     <h1>cmrDbAdmin</h1>
+     <h1>cmr_db_admin</h1>
     <section id="db">
         <fieldset>
             <legend>Base de Donnée</legend>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Anton|Comfortaa|Coiny|Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Bitter|Anton|Comfortaa|Coiny|Inconsolata');
 *::selection{
     background: #cfbc0b;
     color:#000;
@@ -19,18 +19,22 @@ header div p,header div input{
 }
 header form{
     background: #00000000;
-    border:none; 
+    border:none;margin:0;padding: 0; 
+}
+header form div{
+    margin: 5px;
 }
 header div input{
-    padding: 0;background-color:#4444440e;width: 20px;
+    padding: 0;background-color:#4444440e;
+    width: 20px;
 }
 header div input[type=submit]{
-    width: 100px;
+    width: 100px;margin: 5px;
     float: right;
 }
 h1{
-    margin-top: 50px;
-    font-family: 'Coiny', cursive;
+    margin-top: 70px;
+    font-family: 'Bitter', serif;
 }
 a,a:visited{
     color:inherit;
