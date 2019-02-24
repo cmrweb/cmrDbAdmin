@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Comfortaa|Coiny|Inconsolata');
 body{
     background: #040d1f;color:#eee;
     text-align: center;
+}
+h1{
+    font-family: 'Coiny', cursive;
 }
 a,a:visited{
     color:inherit;
@@ -17,9 +21,13 @@ fieldset{
 }
 legend{
     color:#fff;font-size: 1.3em;font-weight: bold;
+    font-family: 'Inconsolata', monospace;
 }
 form{
     background: #040d1f;border-radius: 20px;padding: 10px;
+}
+label{
+    font-family: 'Anton', sans-serif;
 }
 #bdd div{
 text-align:center;
@@ -31,7 +39,8 @@ text-align:center;
     display: flex;justify-content: space-around;
 }
 input,textarea {
-    display: block;border-radius: 10px;
+    display: block;border-radius: 10px;padding: 1px 3px;
+    font-family: 'Inconsolata', monospace;
 }
 
 .field {
@@ -44,7 +53,7 @@ fieldset:nth-child(2) {
 }
 [type=submit]{
     background: #152036;color:#ddd;padding: 5px;margin: 5px auto;
-    border-radius: 25%;
+    border-radius: 25%;font-family: 'Comfortaa', cursive;
 }
 .field input {
     width: 100%
@@ -71,6 +80,7 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    font-family: 'Comfortaa', cursive;
 }
 
 li {
@@ -96,5 +106,5 @@ margin:5px auto;
 width:50%;
 }
 #selform input[type=submit]{
-    width:10%;
+    width:10%;font-family: 'Comfortaa', cursive;
     }
