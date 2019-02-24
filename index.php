@@ -104,6 +104,7 @@
             <tr>
                 
                 <?php
+                if (!empty($sel)):;
                 $titre = mysqli_fetch_assoc($result);
                 foreach ($titre as $key => $value):;
                     ?>
@@ -114,7 +115,7 @@
                 <?php endforeach; ?>
             </tr>
             <?php
-            if (!empty($sel)):;
+            
                 while ($row = mysqli_fetch_assoc($result)):;
                     $newSel = explode(",", $sel);
                     ?>
