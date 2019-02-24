@@ -3,6 +3,9 @@
     background: #cfbc0b;
     color:#000;
 }
+input{
+    font-size: 1em;
+}
 body{
     background: #040d1f;color:#eee;
     text-align: center;
@@ -13,6 +16,7 @@ header div{
     top:0;right: 0;left: 0;
     background: #2223255e;
     font-family: 'Inconsolata', monospace;
+   
 }
 header div p,header div input{
     display: inline;
@@ -22,7 +26,7 @@ header form{
     border:none;margin:0;padding: 0; 
 }
 header form div{
-    margin: 5px;
+    margin: 5px; width: 50%;
 }
 header div input{
     padding: 0;background-color:#4444440e;
