@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  sam. 23 fév. 2019 à 23:19
+-- Généré le :  Dim 24 fév. 2019 à 00:58
 -- Version du serveur :  5.7.19
 -- Version de PHP :  7.1.9
 
@@ -40,30 +40,30 @@ CREATE TABLE IF NOT EXISTS `code` (
 --
 
 INSERT INTO `code` (`id`, `name`) VALUES
-(1, 'SELECT * FROM '),
-(2, 'SELECT  FROM  WHERE  '),
-(3, 'SELECT  FROM  WHERE  LIKE '),
-(4, 'SELECT  FROM  INNER JOIN  WHERE  '),
-(5, 'SELECT  FROM  LEFT JOIN  WHERE  '),
-(6, 'SELECT  FROM  RIGHT JOIN  WHERE  '),
-(7, 'SELECT  FROM  INNER JOIN  ON  '),
-(8, 'SELECT  FROM  LEFT JOIN  ON  '),
-(9, 'SELECT  FROM  RIGHT JOIN  ON '),
-(10, 'INSERT INTO    VALUES '),
-(11, 'INSERT INTO   SELECT  FROM   WHERE  AND '),
-(12, 'UPDATE  SET '),
-(13, 'UPDATE  SET  WHERE'),
-(14, 'DELETE FROM'),
-(15, 'DELETE FROM   WHERE'),
-(16, 'CREATE DATABASE '),
-(17, 'DROP DATABASE'),
-(18, 'CREATE TABLE '),
-(19, 'DROP TABLE'),
-(20, 'ALTER TABLE'),
-(21, 'ALTER TABLE    TO   '),
-(22, 'TRUNCATE TABLE  '),
-(23, 'CREATE TABLE  '),
-(24, 'DROP TABLE IF EXISTS  ');
+(1, 'SELECT * FROM var'),
+(2, 'SELECT var FROM var WHERE var '),
+(3, 'SELECT var FROM var WHERE var LIKE var'),
+(4, 'SELECT var FROM var INNER JOIN var WHERE var '),
+(5, 'SELECT var FROM var LEFT JOIN var WHERE  var'),
+(6, 'SELECT var FROM var RIGHT JOIN var WHERE var '),
+(7, 'SELECT var FROM var INNER JOIN var ON  '),
+(8, 'SELECT var FROM var LEFT JOIN var ON  var'),
+(9, 'SELECT var FROM var RIGHT JOIN var ON var'),
+(10, 'INSERT INTO var (var) VALUES (var),(var),(var)'),
+(11, 'INSERT INTO var (var) SELECT var FROM var WHERE var AND var'),
+(12, 'UPDATE var SET var'),
+(13, 'UPDATE var SET var WHERE var=var'),
+(14, 'DELETE FROM var'),
+(15, 'DELETE FROM var  WHERE var'),
+(16, 'CREATE DATABASE var'),
+(17, 'DROP DATABASE var'),
+(18, 'CREATE TABLE var'),
+(19, 'DROP TABLE var'),
+(20, 'ALTER TABLE var'),
+(21, 'ALTER TABLE  var  TO  var '),
+(22, 'TRUNCATE TABLE var '),
+(23, 'CREATE TABLE var '),
+(24, 'DROP TABLE IF EXISTS var ');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

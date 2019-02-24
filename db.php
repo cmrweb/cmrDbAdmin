@@ -26,8 +26,9 @@ if(isset($_GET['create'])){
 
 }
 if(isset($_POST['createtble'])){
-    $tblname=$_POST['tblename'];
-    $req= 'CREATE TABLE '.$tblname.' ('; 
+     $tblname=$_POST['tblename'];
+    if(!empty($tblname)&& !empty($_POST['champ'])){
+      $req= 'CREATE TABLE '.$tblname.' ('; 
     foreach ($_POST['champ'] as $field) {
         if(!empty($field)){
             $req.=$field;
@@ -39,7 +40,10 @@ if(isset($_POST['createtble'])){
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    mysqli_query($conn,$req);
+    mysqli_query($conn,$req);  
+    }
+   
+    
 
 } 
 if(isset($_POST['show'])){

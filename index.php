@@ -68,7 +68,7 @@
     <fieldset>
         <legend>Requete</legend>
         <form action="#" method="post">
-            <textarea type='text' id='keyword' name="keyword" onkeyup='autocomplet()'></textarea>
+            <textarea spellcheck="false" type='text' id='keyword' name="keyword" onkeyup='autocomplet()'></textarea>
             <ul id='name_list_id'></ul>
             <input type="submit" value="envoyer" name="request">
             <p>
