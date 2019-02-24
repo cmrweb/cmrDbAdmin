@@ -12,24 +12,24 @@
 </head>
 
 <body>
-<header>
-<div>
-    <form action="#" method="post">
+    <header>
         <div>
-    <p>background </p>
-    <input type="color" value="<?=$bgclr?>" name="bgclr" id="bgclr">
-    <input type="color" value="<?=$txtclr?>" name="txtclr" id="txtclr">
-    <p>input </p>
-    <input type="color" value="<?=$inbgclr?>" name="inbgclr" id="inbgclr">
-    <input type="color" value="<?=$intxtclr?>" name="intxtclr" id="intxtclr">
+            <form action="#" method="post">
+                <div>
+                    <p>background </p>
+                    <input type="color" value="<?= $bgclr ?>" name="bgclr" id="bgclr">
+                    <input type="color" value="<?= $txtclr ?>" name="txtclr" id="txtclr">
+                    <p>input </p>
+                    <input type="color" value="<?= $inbgclr ?>" name="inbgclr" id="inbgclr">
+                    <input type="color" value="<?= $intxtclr ?>" name="intxtclr" id="intxtclr">
+                </div>
+                <input type="submit" name="saveClr" value="save">
+                <input type="submit" name="defclr" value="par defaut">
+            </form>
         </div>
-    <input type="submit" name="saveClr" value="save">
-    <input type="submit" name="defclr" value="par defaut">
-    </form>
-</div>
-   
-</header>
-     <h1>cmr_db_admin</h1>
+
+    </header>
+    <h1>cmr_db_admin</h1>
     <section id="db">
         <fieldset>
             <legend>Base de Donnée</legend>
@@ -99,16 +99,43 @@
             <input type="submit" value="voir" name="show">
         </form>
     </fieldset>
-    <section class="liste"><ul>
+    <section class="liste">
+        <table>
+            <tr>
+
+                <?php
+                $row = mysqli_fetch_assoc($result);
+                foreach ($row as $key => $value):;
+                    ?>
+                <th>
+                    <?= $key; ?>
+                </th>
+
+                <?php endforeach; ?>
+            </tr>
             <?php
-            if(!empty($sel)):;
-             while ($row=mysqli_fetch_assoc($result)) :;?>
-            <li><?=$row[$sel];?></li>
-            <?php endwhile;endif; ?></ul>
+            if (!empty($sel)):;
+                while ($row = mysqli_fetch_assoc($result)):;
+                    $newSel = explode(",", $sel);
+                    ?>
+
+            <tr>
+                <?php
+                for ($i = 0; $i < count($newSel); $i++):;
+                    ?>
+                <td>
+                    <?= $row[$newSel[$i]]; ?>
+                </td>
+
+                <?php endfor; ?>
+            </tr>
+            <?php endwhile;
+    endif; ?>
+        </table>
     </section>
     <footer><small><a target="_blank" href="https://github.com/tykrasta/cmrDbAdmin">github</a></small></footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
-</html>
+</html> 

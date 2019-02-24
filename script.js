@@ -62,4 +62,5 @@ $(function() {
 		'background' : $('#inbgclr').val(),
 		'color' : $('#intxtclr').val()
 	});
+	
   });
