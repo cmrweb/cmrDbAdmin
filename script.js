@@ -43,7 +43,7 @@ function close(){
 $('#dbclose').click(function(){
 	$('#dbBlock').css({
 		'position':'absolute',
-		'right': window.innerWidth-79+'px',
+		'right': window.innerWidth-58+'px',
 		'top':22+'px',
 		'bottom':window.innerHeight-58+'px'
 	});
