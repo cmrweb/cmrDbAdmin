@@ -102,10 +102,10 @@
     <section class="liste">
         <table>
             <tr>
-
+                
                 <?php
-                $row = mysqli_fetch_assoc($result);
-                foreach ($row as $key => $value):;
+                $titre = mysqli_fetch_assoc($result);
+                foreach ($titre as $key => $value):;
                     ?>
                 <th>
                     <?= $key; ?>
@@ -118,10 +118,9 @@
                 while ($row = mysqli_fetch_assoc($result)):;
                     $newSel = explode(",", $sel);
                     ?>
-
             <tr>
                 <?php
-                for ($i = 0; $i < count($newSel); $i++):;
+                for ($i = 0; $i <count($newSel); $i++):;
                     ?>
                 <td>
                     <?= $row[$newSel[$i]]; ?>
