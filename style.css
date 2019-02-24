@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Comfortaa|Coiny|Inconsolata');
+
 body{
     background: #040d1f;color:#eee;
     text-align: center;
+}
+header div{
+    text-align: left;
+    position: absolute;
+    top:0;right: 0;left: 0;
+    background: #2223255e;
+}
+header div p,header div input{
+    display: inline;
+}
+header div input{
+    padding: 0;background-color:#4444440e;width: 20px;
 }
 h1{
     font-family: 'Coiny', cursive;
@@ -17,14 +30,14 @@ a,a:visited{
     width: 100%;
 }
 fieldset{
-    background: #01215ce5;
+    background: #37383a52;
 }
 legend{
     color:#fff;font-size: 1.3em;font-weight: bold;
     font-family: 'Inconsolata', monospace;
 }
 form{
-    background: #040d1f;border-radius: 20px;padding: 10px;
+    background: #fffcfc21;border-radius: 20px;padding: 10px;
 }
 label{
     font-family: 'Anton', sans-serif;
@@ -53,7 +66,7 @@ fieldset:nth-child(2) {
     padding: 0;
 }
 [type=submit]{
-    background: #152036;color:#ddd;padding: 5px;margin: 5px auto;
+    background: #1f2227a8;color:#ddd;padding: 5px;margin: 5px auto;
     border-radius: 25%;font-family: 'Comfortaa', cursive;
 }
 .field input {
@@ -66,7 +79,6 @@ fieldset:nth-child(2) {
 span {
     cursor: pointer;
     font: 1.3em bold;
-    background: #152036;
     color: #fff;
     border-radius: 25%;
     padding: 5px;
@@ -89,17 +101,17 @@ li {
     cursor: pointer;
     transition: .5s ease;
     padding: 5px 0;
-    background: #071531;
+    background: #87878869;
     color: #eee;
 }
 .liste li:nth-child(odd){
-    background: #152442;
+    background: #383b415e;
 }
 .liste li:nth-child(odd):hover{
-    background: #181b20;
+    background: #181b206b;
 }
 li:hover {
-    background: #181b20;
+    background: #181b206b;
     color: #fff;
 }
 #selform input{

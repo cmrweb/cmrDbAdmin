@@ -36,3 +36,13 @@ function set_item(item) {
 	// hide proposition list
 	$('#name_list_id').hide();
 }
+
+$(document).on('change',function(){
+	$('body').css({
+		'background' : $('#bgclr').val(),
+		'color' : $('#txtclr').val()
+	});
+	$('legend,input[type=submit],li').css({
+		'color' : $('#txtclr').val()
+	});
+});
