@@ -14,16 +14,20 @@
 <body>
 <header>
 <div>
-<p>background :</p>
-<input type="color" value="#040d1f" id="bgclr">
-<input type="color" value="#ffffff" id="txtclr">
-<p>input :</p>
-<input type="color" value="#060416" id="inbgclr">
-<input type="color" value="#9fd1d1" id="intxtclr">
+    <form action="#" method="post">
+    <p>background </p>
+    <input type="color" value="<?=$bgclr?>" name="bgclr" id="bgclr">
+    <input type="color" value="<?=$txtclr?>" name="txtclr" id="txtclr">
+    <p>input </p>
+    <input type="color" value="<?=$inbgclr?>" name="inbgclr" id="inbgclr">
+    <input type="color" value="<?=$intxtclr?>" name="intxtclr" id="intxtclr">
+    <input type="submit" name="saveClr" value="save">
+    <input type="submit" name="defclr" value="par defaut">
+    </form>
 </div>
-    <h1>cmrDbAdmin</h1>
+   
 </header>
-    
+     <h1>cmrDbAdmin</h1>
     <section id="db">
         <fieldset>
             <legend>Base de Donnée</legend>

@@ -1,5 +1,31 @@
 
 <?php
+session_start();
+if (isset($_COOKIE['color'])) {
+    $bgclr = $_COOKIE['color'][0];
+    $txtclr = $_COOKIE['color'][1];
+    $inbgclr = $_COOKIE['color'][2];
+    $intxtclr = $_COOKIE['color'][3]; 
+   
+}else{
+    $bgclr = '#040d1f';
+    $txtclr = '#ffffff';
+    $inbgclr = '#060416';
+    $intxtclr = '#9fd1d1'; 
+}
+if(isset($_POST['saveClr'])){
+  setcookie("color[0]", $_POST['bgclr'], strtotime( '+30 days' ));
+  setcookie("color[1]", $_POST['txtclr'], strtotime( '+30 days' ));
+  setcookie("color[2]", $_POST['inbgclr'], strtotime( '+30 days' ));
+  setcookie("color[3]", $_POST['intxtclr'], strtotime( '+30 days' )); 
+  header('location: ./');
+}
+if(isset($_POST['defclr'])){ 
+  setcookie("color[0]", '#040d1f', strtotime( '+30 days' ));
+  setcookie("color[1]", '#ffffff', strtotime( '+30 days' ));
+  setcookie("color[2]", '#060416', strtotime( '+30 days' ));
+  setcookie("color[3]", '#9fd1d1', strtotime( '+30 days' )); 
+}
 //variable
 $msg=$msg2=$msg3=$msg4=$tblname=$dbname=$servername=$username=$password="";
 //connexion pour creation de base de donnée

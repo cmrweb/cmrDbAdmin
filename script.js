@@ -50,3 +50,16 @@ $(document).on('change',function(){
 		'color' : $('#intxtclr').val()
 	});
 });
+$(function() {
+	$('body').css({
+		'background' : $('#bgclr').val(),
+		'color' : $('#txtclr').val()
+	});
+	$('legend,input[type=submit],li').css({
+		'color' : $('#txtclr').val()
+	});
+	$('[type=text]').css({
+		'background' : $('#inbgclr').val(),
+		'color' : $('#intxtclr').val()
+	});
+  });

@@ -12,14 +12,24 @@ header div{
     position: absolute;
     top:0;right: 0;left: 0;
     background: #2223255e;
+    font-family: 'Inconsolata', monospace;
 }
 header div p,header div input{
     display: inline;
 }
+header form{
+    background: #00000000;
+    border:none; 
+}
 header div input{
     padding: 0;background-color:#4444440e;width: 20px;
 }
+header div input[type=submit]{
+    width: 100px;
+    float: right;
+}
 h1{
+    margin-top: 50px;
     font-family: 'Coiny', cursive;
 }
 a,a:visited{
@@ -69,7 +79,7 @@ fieldset:nth-child(2) {
     padding: 0;
 }
 [type=submit]{
-    background: #1f2227a8;color:#ddd;padding: 5px;margin: 5px auto;
+    background: #00000086;color:#ddd;padding: 5px;margin: 5px auto;
     border-radius: 25%;font-family: 'Comfortaa', cursive;
 }
 [type=text]{
@@ -94,6 +104,7 @@ span {
 textarea {
     width: 100%;
     resize: none;
+    font-size: 1.3em;
 }
 
 ul {
