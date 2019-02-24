@@ -1,5 +1,5 @@
 var count=$('.field').length;
-
+function newtable() {
 $('#plus').click(function(){
     
     var input="<div id='form"+(count++)+"' class='field'>";
@@ -9,29 +9,50 @@ $('#plus').click(function(){
 $('#moins').click(function(){
     $('#newtbl>div:last-child').remove();
     
-});
-$('#dbshow').click(function(){
-	$('#dbBlock').css({
-		'position':'relative',
-		'right': 0,
-		'top':0,
-		'bottom':0
+});	
+}
+function onstart(){
+	$('body').css({
+		'background' : $('#bgclr').val(),
+		'color' : $('#txtclr').val()
 	});
-	$('h1').html('cmr_db_admin');
-	$('#dbclose').show();
+	$('legend,input[type=submit],li').css({
+		'color' : $('#txtclr').val()
+	});
+	$('[type=text]').css({
+		'background' : $('#inbgclr').val(),
+		'color' : $('#intxtclr').val()
+	});
 	$('#dbshow').hide();
-});
+	$('h1').html('cmr_db_admin');	
+}
+function open(){
+	$('#dbshow').click(function(){
+		$('#dbBlock').css({
+			'position':'relative',
+			'right': 0,
+			'top':0,
+			'bottom':0
+		});
+		$('h1').html('cmr_db_admin');
+		$('#dbclose').show();
+		$('#dbshow').hide();
+	});
+}
+function close(){
 $('#dbclose').click(function(){
 	$('#dbBlock').css({
 		'position':'absolute',
 		'right': window.innerWidth-79+'px',
 		'top':22+'px',
-		'bottom':0
+		'bottom':window.innerHeight-58+'px'
 	});
 	$('h1').html('');
 	$('#dbclose').hide();
 	$('#dbshow').show();
-});
+});	
+}
+
 function autocomplet() {
 	var min_length = 0; // min caracters to display the autocomplete
 	var keyword = $('#keyword').val();
@@ -57,8 +78,7 @@ function set_item(item) {
 	// hide proposition list
 	$('#name_list_id').hide();
 }
-
-$(document).on('change',function(){
+function customColor(){
 	$('body').css({
 		'background' : $('#bgclr').val(),
 		'color' : $('#txtclr').val()
@@ -69,19 +89,12 @@ $(document).on('change',function(){
 	$('[type=text]').css({
 		'background' : $('#inbgclr').val(),
 		'color' : $('#intxtclr').val()
-	});
+	});	
+}
+$(document).on('change',function(){
+	customColor();
 });
 $(function() {
-	$('body').css({
-		'background' : $('#bgclr').val(),
-		'color' : $('#txtclr').val()
-	});
-	$('legend,input[type=submit],li').css({
-		'color' : $('#txtclr').val()
-	});
-	$('[type=text]').css({
-		'background' : $('#inbgclr').val(),
-		'color' : $('#intxtclr').val()
-	});
-	$('#dbshow').hide();
+	onstart();newtable();
+	open();close();
   });

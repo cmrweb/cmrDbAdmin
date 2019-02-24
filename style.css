@@ -47,7 +47,8 @@ h2 i{
     margin: 10px;
 }
 #dbshow{
-    color:#2b5bc2;
+    color:#e4e3e3de;
+    text-shadow: #000 -4px 2px 5px;
 }
 #dbclose{
     color:#960000;background: #fff;border: #fff .5px solid;
@@ -60,6 +61,7 @@ a,a:visited{
     margin: 20px;
     padding: 20px 40px;
     background: #0000004d;
+    transition: ease-in 1s right;
 }
 #db {
     display: flex;
