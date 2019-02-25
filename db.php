@@ -42,6 +42,7 @@ function connect($servername, $username, $password,$dbname){
         die("Connection failed: " . $GLOBALS['conn']->connect_error);
     }
 }
+
 /*
 *   Base de donée
 */

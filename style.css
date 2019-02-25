@@ -46,11 +46,11 @@ h2 i{
     top: 0;
     margin: 10px;
 }
-#dbshow{
+#dbshow,#fileshow{
     color:#e4e3e3de;
     text-shadow: #000 -4px 2px 5px;
 }
-#dbclose{
+#dbclose,#fileclose{
     color:#960000;background: #fff;border: #fff .5px solid;
 }
 a,a:visited{
@@ -58,10 +58,45 @@ a,a:visited{
 }
 #dbBlock{
     position: relative;
-    margin: 20px;
+    margin: 20px 25% 0 0;
     padding: 20px 40px;
     background: #0000004d;
     transition: ease-in 1s right;
+}
+#fileBlock{
+    position: relative;
+    margin: 20px 25% 0 0;
+    padding: 20px 40px;
+    background: #0000004d;
+    transition: ease-in .5s right;
+    top: 12px;
+    text-align: left;
+}
+#fileBlock a{
+padding: 5px;
+}
+#docs{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 25%; 
+}
+#docs p{
+    margin: 0;
+}
+#docs p a{
+    padding: 5px 0;
+    background: #87878854;
+    border: #fff .5px solid;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    transition: all 0.5s linear;
+}
+#docs p a:hover{
+    background: #ffffff52;
+    border: #aaff94 .5px solid;
+    color: #aaff94;
 }
 #db {
     display: flex;
@@ -161,7 +196,6 @@ tr{
     border: .5px #aaa solid;
     cursor: pointer;
     transition: .5s ease;
-    
     background: #87878869;
     color: #eee;
 }

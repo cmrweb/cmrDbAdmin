@@ -1,5 +1,5 @@
-<h2><i id="dbshow" class="fas fa-database"></i>
-    <i id="dbclose" class="fas fa-window-close"></i></h2>
+<!--<h2><i id="dbshow" class="fas fa-database"></i>
+    <i id="dbclose" class="fas fa-window-close"></i></h2>-->
     <section id="db">
         <fieldset>
             <legend>Base de Donnée</legend>
