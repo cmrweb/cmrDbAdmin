@@ -37,7 +37,7 @@ function fconnect($servername, $username, $password){
 }
 //connexion
 function connect($servername, $username, $password,$dbname){
-    $GLOBALS['conn']=new mysqli($servername, $username, $password, 'cmr_'.$dbname);
+    $GLOBALS['conn']=new mysqli($servername, $username, $password, $dbname);
     if ($GLOBALS['conn']->connect_error) {
         die("Connection failed: " . $GLOBALS['conn']->connect_error);
     }
@@ -54,11 +54,11 @@ if(isset($_GET['create'])){
     
     if(!empty($dbname)){
         fconnect($servername, $username, $password);
-        $req="CREATE DATABASE IF NOT EXISTS cmr_$dbname CHARACTER SET utf8 COLLATE utf8_general_ci";
+        $req="CREATE DATABASE IF NOT EXISTS $dbname CHARACTER SET utf8 COLLATE utf8_general_ci";
         mysqli_query($conn,$req);
         $msg= 'base de donnée crée';     
         connect($servername, $username, $password,$dbname);
-        $msg.= ' et connecter : cmr_'.$dbname;
+        $msg.= ' et connecter : '.$dbname;
     }else{
         $msg= 'entrer un nom de base de donnée';
     }
@@ -110,4 +110,5 @@ if(isset($_POST['show'])){
         $msg3= 'Veuillez remplir les champs';
     }  
 }
+     
 ?>

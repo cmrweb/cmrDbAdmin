@@ -9,4 +9,7 @@
     <section id="docs">
     <?php include './inc/docs.php';?>
     </section>
+    <section id="dbList">
+    <?php include './inc/listDB.php';?>
+    </section>
 <?php include './inc/foot.php';?>

@@ -94,7 +94,7 @@ padding: 5px;
     transition: all 0.5s linear;
 }
 #docs p a:hover{
-    background: #ffffff52;
+    background:#1e2e1dda;
     border: #aaff94 .5px solid;
     color: #aaff94;
 }
@@ -104,6 +104,20 @@ padding: 5px;
 }
 #db fieldset {
     width: 100%;
+}
+#dbList{
+    position: fixed;
+    right: 0;
+    bottom: 0
+}
+#dbList table{
+    background:#000000dc;
+}
+#dbList a,li a{display:block;margin: 0;padding:4px 0;}
+#dbList a:hover,li a:hover{
+    background:#1e2e1dda;
+    border: #aaff94 .5px solid;
+    color: #aaff94;
 }
 fieldset{
     background: #37383a52;
@@ -181,7 +195,7 @@ li {
     border: .5px #aaa solid;
     cursor: pointer;
     transition: .5s ease;
-    padding: 5px 0;
+    padding: 0;
     background: #87878869;
     color: #eee;
 }
@@ -199,9 +213,7 @@ tr{
     background: #87878869;
     color: #eee;
 }
-td{
-    padding: 5px 0;
-}
+
 .liste tr:nth-child(odd){
     background: #383b415e;
 }
