@@ -2,7 +2,17 @@
 > Bien commencer
 
 
-1. Cree la base de donnee 'code'
+* dans (wamp64)/www/
+  * coller le dossier et le renommer : 'admin'.
+  * crée un ficher index.php
+    coller le code :
+    `<?php header('location: ./admin/');?>`
+  
+* dans votre navigateur allez sur : 
+  `http://localhost`
+
+
+1. Cree la base de donnee 'cmr_code'
 
 ![image6](/img/6.PNG "image6") 
 ***
@@ -17,10 +27,7 @@
 
 ![image8](/img/8.PNG "image8") 
 ***
-> Captures d'ecran 
 
-![image1](/img/1.png "image1")  ![image4](/img/4.png "image4") 
-![image2](/img/2.png "image2")  ![image3](/img/3.png "image3") 
 
 
 

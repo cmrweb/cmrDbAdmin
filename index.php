@@ -1,5 +1,8 @@
 <?php include './inc/head.php';?>
     <h1></h1> 
+    <section id="codeBlock">
+        <iframe src="./CodeEditor" frameborder="0"></iframe>
+    </section>
     <section id=fileBlock>
     <?php include './inc/files.php';?>
     </section>
